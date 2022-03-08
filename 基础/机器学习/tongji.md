@@ -29,7 +29,7 @@ __感知机学习算法：__
 *3.* 如果$y_i(wx_i+b) \leq 0$  $$w \leftarrow w+ \eta y_ix_i$$  $$b \leftarrow b+ \eta y_i$$  
 *4.* 转至2，直至训练集中无误分类点。  
 __算法的收敛性__  
-*1.* 存在满足条件的 $|| \vec{w_{opt}}|| =1$ 的超平面,
+*1.* 存在满足条件的 $||\vec{w_{opt}}||=1$ 的超平面,
 $\vec{w_{opt}} \vec{x}_i = y_i(w_{opt}x_i + b_{opt})$
 将训练集完全正确分开；存在
 $\gamma = min_i [ y_i(w_{opt}x_i + b_{opt})]$
@@ -40,9 +40,8 @@ $$y_iy_i(w_{opt}x_i = y_i(w_{opt}x_i + b_{opt})$$
 __对偶形式__   
 $$f(x) = sign[\displaystyle \sum^{N}_{j=1}{{ay_jx_j} \cdot x +b}]$$  
 *1.* 选取初始值$a \leftarrow 0,b\leftarrow 0$ 
-*2.* 在训练集中选取初值$(x_i,y_i)$  
-*3.* 如果$$y_i [\displaystyle \sum^{N}_{j=1}{{ay_jx_j} \cdot x +b}]\leq 0$$  
-$$a \leftarrow a_i+ \eta $$  $$b \leftarrow b+ \eta y_i$$   
+*2.* 在训练集中选取初值$(x_i,y_i)$   
+*3.* 如果$$y_i[\displaystyle \sum^{N}_{j=1}{{ay_jx_j} \cdot x +b}]\leq 0$$  $$a \leftarrow a_i+ \eta $$  $$b \leftarrow b+ \eta y_i$$   
 *4.* 转至2，直至训练集中无误分类点。  
 Gram矩阵$$G=[x_ix_j]_{N\times N}$$
 ![RUNOOB 图标](基础\机器学习\感知机对偶形式.png)
