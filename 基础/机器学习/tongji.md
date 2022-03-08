@@ -44,6 +44,6 @@ $$f(x) = sign[\displaystyle \sum^{N}_{j=1}{{ay_jx_j} \cdot x +b}]$$
 *3.* 如果$$y_i[\displaystyle \sum^{N}_{j=1}{{ay_jx_j} \cdot x +b}]\leq 0$$  $$a \leftarrow a_i+ \eta $$  $$b \leftarrow b+ \eta y_i$$   
 *4.* 转至2，直至训练集中无误分类点。  
 Gram矩阵$$G=[x_ix_j]_{N\times N}$$
-![RUNOOB 图标](基础\机器学习\感知机对偶形式.png)
+
 [^1]:supervised learning 
 
